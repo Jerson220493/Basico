@@ -21,27 +21,29 @@
       <!-- <input type="radio" name="mascota" />Langostelvis -> Agua y fuego
       <input type="radio" name="mascota" />Tucapalma -> Agua y tierra
       <input type="radio" name="mascota" />Pydos -> Tierra y fuego -->
-      <button>Seleccionar</button>
+      <button id="boton-mascota">Seleccionar</button>
     </section>
     <section id="seleccionar_ataque">
       <h2>Elige tu ataque:</h2>
-      <p>Tu mascota tiene <span>3</span>vidas</p>
-      <p>La mascota del enemigo tiene <span>3</span>vidas</p>
       <p>
-        <button>Fuego 🔥</button>
-        <button>Water 🧊</button>
-        <button>Tierra 🌱</button>
+        Tu mascota <span id="masconta-jugador"></span> tiene <span>3</span>vidas
+      </p>
+      <p>
+        La mascota <span id="masconta-enemigo"></span> del enemigo tiene
+        <span>3</span>vidas
+      </p>
+      <p>
+        <button id="boton-fuego">Fuego 🔥</button>
+        <button id="boton-agua">Water 🧊</button>
+        <button id="boton-tierra">Tierra 🌱</button>
       </p>
     </section>
     <section id="mensajes">
       <!-- este parrafo muestre el ataque que se esta lanzando -->
-      <p>
-        Tu mascota ataco con fuego y la mascota del enemigo ataco con tierra--
-        Ganaste 🎊
-      </p>
     </section>
     <section id="reiniciar">
-      <button>Reiniciar</button>
+      <button id="boton-reiniciar">Reiniciar</button>
     </section>
+    <script src="./js/mokemon.js"></script>
   </body>
 </html>
