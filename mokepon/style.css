@@ -1,0 +1,28 @@
+/* 
+tipos de selectores
+tipos
+clases 
+ids 
+*/
+
+/* tipos de displays 
+display block todo el ancho
+display inline  -> nunca toma with o height 
+display inline block -> tiene caracteristicas inline y block
+*/
+
+/* flexbox alinear alimentos de forma vertical o :horizontal  */
+
+.title {
+  color: rgb(33, 87, 204);
+  width: 300px;
+  height: 50px;
+  background-color: cyan;
+}
+
+#seleccionar_mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
