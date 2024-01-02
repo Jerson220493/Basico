@@ -13,11 +13,12 @@ display inline block -> tiene caracteristicas inline y block
 
 /* flexbox alinear alimentos de forma vertical o :horizontal  */
 
-.title {
-  color: rgb(33, 87, 204);
-  width: 300px;
-  height: 50px;
-  background-color: cyan;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+/*centrar todos los elementos de manera vertical y horizontal*/
+body {
+  background-color: #163020;
+  font-family: "Anton", sans-serif;
 }
 
 #seleccionar_mascota {
@@ -25,4 +26,147 @@ display inline block -> tiene caracteristicas inline y block
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 32px;
+}
+
+.sub-title {
+  color: white;
+  font-size: 20px;
+}
+
+.tarjetas,
+.tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+
+/* modelo de cajas */
+.tarjeta-de-mokepon {
+  width: 180px;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #b6c4b6;
+  margin: 10px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: aqua;
+}
+
+#boton-mascota {
+  background-color: #ee60fc;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  height: 50px;
+  width: 200px;
+  border: 1px solid #e20cf7;
+}
+
+#boton-mascota:hover {
+  background-color: #e20cf7;
+}
+
+#seleccionar_ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-ataque {
+  background: #b6c4b6;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-color: transparent;
+  width: 80px;
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+
+#mensajes {
+  width: 200px;
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: transparent;
+  color: green;
+  font-family: "Anton", sans-serif;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  text-align: center;
+}
+
+.ataques-del-jugador,
+.ataques-del-enemigo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#ver-mapa{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#botones-canvas{
+  display: flex;
+  flex-direction: row;
+}
+
+#ver-mapa button {
+  background: #b6c4b6;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-color: transparent;
+  width: 80px;
+  color: white;
+  font-family: "Anton", sans-serif;
+  margin: 10px;
+}
+
+@media (max-width: 560px) {
+  .tarjetas,
+  .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 290px) {
+  #ver-mapa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }

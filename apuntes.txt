@@ -3,3 +3,5 @@ a=1
 b=2
 c=a+b // ojo los operadores y primero se resultve los que esta despues del igual
 controlar el flujo de acciones de la computadora
+
+canvas en html crea un espacio rectangular para poder dibujar con js
